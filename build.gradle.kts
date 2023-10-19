@@ -11,7 +11,11 @@ repositories {
 kotlin {
     js(IR) {
         binaries.executable()
-        browser()
+        browser {
+            webpackTask(Action {
+                mainOutputFileName.set("main.[chunkhash].js")
+            })
+        }
     }
     sourceSets {
         val jsMain by getting {
@@ -22,6 +26,7 @@ kotlin {
                 implementation(devNpm("sass-loader", "13.3.2"))
                 implementation(devNpm("bootstrap", "5.3.2"))
                 implementation(devNpm("node-sass", "8.0.0"))
+                implementation(devNpm("html-webpack-plugin", "5.5.3"))
             }
         }
     }
