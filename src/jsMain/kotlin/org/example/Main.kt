@@ -6,7 +6,7 @@ import org.example.services.ComponentService
 
 fun main() {
 
-    require<Any>("./main.css")
+    require<Any>("./main.scss")
 
     val alertService = AlertService()
     val componentService = ComponentService()
