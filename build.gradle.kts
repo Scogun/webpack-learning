@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.targets.js.npm.tasks.KotlinNpmInstallTask
-
 plugins {
     kotlin("multiplatform") version "1.9.10"
 }

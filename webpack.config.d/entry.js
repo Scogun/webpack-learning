@@ -1,4 +1,4 @@
 config.entry = {
     ...config.entry,
-    vendor: [require('path').resolve(__dirname, "kotlin\\vendor.js")]
+    bootstrap: [require('path').resolve(__dirname, "kotlin\\bootstrap.js")]
 };

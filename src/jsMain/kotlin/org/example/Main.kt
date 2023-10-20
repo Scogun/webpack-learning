@@ -13,4 +13,3 @@ fun main() {
 
     run(alertService, componentService)
 }
-
